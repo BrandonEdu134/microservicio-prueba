@@ -1,0 +1,12 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: config-server
+          uri: https://github.com/BrandonEdu134/microservicio-prueba
+          search-paths: config-data
+  application:
+    name: config-service
